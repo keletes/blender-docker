@@ -21,7 +21,7 @@ libxinerama-dev \
 libglew-dev \
 xvfb
 
-RUN pip install -U python-dotenv wheel future-fstrings
+RUN pip install -U wheel future-fstrings
 
 ADD https://github.com/TylerGubala/blenderpy/releases/download/v2.91a0/bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl
 RUN python -m pip install bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl && python /usr/local/bin/bpy_post_install
